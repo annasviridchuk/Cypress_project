@@ -9,5 +9,7 @@ it('Test basket data', () => {
         .should('be.visible')
 
     cy.wait(2000).get('div.basket-section__basket-list.basket-list').toMatchImageSnapshot()
+
+    //cy.wait(2000).document().toMatchImageSnapshot()
     
 })
